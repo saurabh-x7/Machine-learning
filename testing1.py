@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, classification_report
 # 1. LOAD DATA
 # ----------------------
 
-df = pd.read_csv(r"C:\Users\Ayush\Desktop\projects\iot project\Air quality index prediction\dataset\cleaned_aqi_data.csv")
+df = pd.read_csv(r"C:\Users\Saurabh\Desktop\projects\iot project\Air quality index prediction\dataset\cleaned_aqi_data.csv")
 
 print("Original shape:", df.shape)
 
@@ -124,3 +124,4 @@ prediction = model.predict(sample_scaled)
 predicted_label = le.inverse_transform(prediction)
 
 print("\nPredicted AQI Bucket:", predicted_label[0])
+
